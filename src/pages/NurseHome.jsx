@@ -41,7 +41,14 @@ const NurseHome = () => {
   }, [])
   return (
     <div>
-      {loading ? <h3>Loading....</h3> :
+      {loading ? <div className="flex justify-center items-center w-screen h-screen"><DNA
+                visible={true}
+                height="300"
+                width="300"
+                ariaLabel="dna-loading"
+                wrapperStyle={{}}
+                wrapperClass="dna-wrapper"
+            /></div>  :
         <div className='w-10/12 m-auto'>
           <h1 className="text-3xl p-4">Nurse Details</h1>
           <div className="flex justify-between items-center w-3/6 border-2 border-slate-300 rounded-md bg-slate-100 m-auto p-5">

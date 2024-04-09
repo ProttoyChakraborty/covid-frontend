@@ -162,7 +162,14 @@ const PatientDetails = () => {
   return (
       <>
       <Navbar/>
-      {loading ? <div>loading...</div> :
+      {loading ? <div className="flex justify-center items-center w-screen h-screen"><DNA
+                visible={true}
+                height="300"
+                width="300"
+                ariaLabel="dna-loading"
+                wrapperStyle={{}}
+                wrapperClass="dna-wrapper"
+            /></div> :
       <div className='w-10/12 m-auto p-5'>
        <div>
           {vitalState !== "none" && (
